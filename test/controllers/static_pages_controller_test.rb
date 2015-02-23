@@ -6,8 +6,38 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get help" do
-    get :help
+  test "should get faq" do
+    get :faq
+    assert_response :success
+  end
+
+  test "should get about" do
+    get :about
+    assert_response :success
+  end
+
+  test "should get checklist" do
+    get :checklist
+    assert_response :success
+  end
+
+  test "should get news" do
+    get :news
+    assert_response :success
+  end
+
+  test "should get events" do
+    get :events
+    assert_response :success
+  end
+  
+  test "should get community" do
+    get :community
+    assert_response :success
+  end
+
+  test "should get incubator" do
+    get :incubator
     assert_response :success
   end
 
